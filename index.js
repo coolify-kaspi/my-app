@@ -1,8 +1,12 @@
-const http = require('http');
+const express = require("express");
+const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-http.createServer((req, res) => {
-  res.write('Coolify working');
-  res.end();
-}).listen(PORT);
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
+
+app.listen(PORT, () => {
+  console.log("Server started on port " + PORT);
+});
