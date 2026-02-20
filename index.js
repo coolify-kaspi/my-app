@@ -1,13 +1,11 @@
-app.use(express.json());
-
-app.post("/kaspi/extract", (req, res) => {
-  const { receipt_url } = req.body;
-
-  if (!receipt_url) {
-    return res.status(400).json({ error: "Missing receipt_url" });
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
-
-  console.log("Receipt URL:", receipt_url);
-
-  res.json({ success: true });
-});
+}
