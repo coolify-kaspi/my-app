@@ -1,6 +1,4 @@
 {
-  "name": "coolify-kaspi/my-app:main-swck4wkwgokos0s04w8wccwg",
-  "version": "1.0.0",
   "scripts": {
     "start": "node index.js"
   }
